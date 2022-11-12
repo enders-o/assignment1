@@ -1,5 +1,5 @@
 body {
-    background-color: #F9F3EC;
+    background-color: #EBD8C1;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 10% 10% 10% 40% 10% 20%;
@@ -9,6 +9,7 @@ body {
 }
 
 aside {
+    background-color: #F9F3EC;
     grid-column: 1/2;
     grid-row: 1/7;
 }
