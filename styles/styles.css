@@ -59,3 +59,13 @@ button {
     padding: 10px;
 }
 
+#bottom-buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: right;
+    align-self: center;
+}
+
+#bottom-buttons button {
+    margin: 5px;
+}
