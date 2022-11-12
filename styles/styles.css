@@ -34,3 +34,17 @@ h1 {
     padding: 10px;
 }
 
+#top-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    padding: 10px;
+
+}
+
+#top-buttons button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
