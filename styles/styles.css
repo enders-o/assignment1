@@ -1,10 +1,14 @@
+html {
+    height: 100%;
+}
+
 body {
     background-color: #EBD8C1;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 10% 10% 10% 40% 10% 20%;
-    height: 100vh;
-    width: 100vh;
+    height: 100%;
+    width: 100%;
     margin: 0;
     font-family: 'Sono', sans-serif;
 }
@@ -68,4 +72,8 @@ button {
 
 #bottom-buttons button {
     margin: 5px;
+}
+
+footer {
+    text-align: center;
 }
