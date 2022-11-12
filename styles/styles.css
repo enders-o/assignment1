@@ -50,6 +50,7 @@ button {
     padding: 15px;
     border: none;
     border-radius: 5px;
+    color: white;
 }
 
 #note {
@@ -81,4 +82,20 @@ footer {
 footer a img{
     width: 50px;
     height: 50px;
+}
+
+#new-note {
+    background-color: #5394A0;
+}
+
+#dark-theme {
+    background-color: #6F6A87;
+}
+
+#save {
+    background-color: #4B7171;
+}
+
+#cancel {
+    background-color: #D9827C;
 }
