@@ -43,7 +43,8 @@ h1 {
     justify-content: space-between;
     align-self: center;
     padding: 10px;
-
+    position: relative;
+    bottom: -20px;
 }
 
 button {
@@ -71,6 +72,8 @@ button {
     display: flex;
     justify-content: right;
     align-self: center;
+    position: relative;
+    top: -20px;
 }
 
 #bottom-buttons button {
