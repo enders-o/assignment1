@@ -55,6 +55,8 @@ button {
 
 #note {
     padding: 10px;
+    width: 96.5%;
+    height: 100%;
 }
 
 #note textarea{
