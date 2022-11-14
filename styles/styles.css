@@ -6,7 +6,7 @@ body {
     background-color: #EBD8C1;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 10% 10% 40% 10% 20%;
+    grid-template-rows: 10% 5% 10% 40% 10% 25%;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -81,7 +81,7 @@ button {
 footer {
     text-align: center;
     position: relative;
-    bottom: -30px;
+    top: 60px;
 }
 
 footer a img{
