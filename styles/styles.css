@@ -102,3 +102,9 @@ footer a img{
 #cancel {
     background-color: #D9827C;
 }
+
+@media screen and (max-width: 600px){
+    aside {
+        background-color: #EBD8C1;
+    }
+}
