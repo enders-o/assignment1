@@ -20,6 +20,11 @@ aside {
     grid-row: 1/7;
 }
 
+aside ul {
+    list-style-type: square;
+    margin-left: 10px;
+}
+
 aside h2 {
     text-align: center;
 }
