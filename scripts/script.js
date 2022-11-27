@@ -1,4 +1,5 @@
 const themeButton = document.querySelector('#dark-theme');
+const cancelButton = document.querySelector("#cancel")
 // console.log(themeButton);
 
 const darkTheme = () => {
@@ -15,4 +16,12 @@ const darkTheme = () => {
     
 }
 
-themeButton.addEventListener("click", darkTheme)
+const cancel = () => {
+    document.querySelector('textarea').style.display = 'none';
+    document.querySelector('#save').style.display = 'none';
+    document.querySelector('#cancel').style.display = 'none';
+
+}
+
+themeButton.addEventListener("click", darkTheme);
+cancelButton.addEventListener("click", cancel);
