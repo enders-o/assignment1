@@ -3,6 +3,12 @@ const cancelButton = document.querySelector("#cancel")
 const newNoteButton = document.querySelector("#new-note")
 // console.log(themeButton);
 
+let notesArray = [
+    {title:"note one", body:"this is my first note"}
+]
+
+console.log(notesArray)
+
 const darkTheme = () => {
     document.body.classList.toggle('darkThemeBody');
     document.querySelector('aside').classList.toggle('darkThemeAside');
