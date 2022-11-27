@@ -3,6 +3,7 @@ const cancelButton = document.querySelector("#cancel");
 const newNoteButton = document.querySelector("#new-note");
 const saveButton = document.querySelector('#save');
 const textarea = document.querySelector('textarea');
+const notesList = document.querySelector(".notes-list");
 // console.log(themeButton);
 
 let notesArray = [
@@ -48,13 +49,24 @@ const save = () => {
     // console.log(user_text);
     notesArray.push({title: user_title, body:user_text});
     // console.log(notesArray);
-    notesList = document.querySelector(".notes-list");
     let li = document.createElement('li');
     li.textContent = user_title;
     notesList.appendChild(li);
+}
+
+const sidebar = (ev) => {
+    // console.log(ev.target);
+    // console.log(ev.target.textContent);
+    notesArray.forEach((el) => {
+        if(ev.target.textContent === el.title){
+            // console.log(el.body);
+            textarea.value = el.body;
+        }
+    });
 }
 
 themeButton.addEventListener("click", darkTheme);
 cancelButton.addEventListener("click", cancel);
 newNoteButton.addEventListener("click", newNote);
 saveButton.addEventListener("click", save);
+notesList.addEventListener("click", sidebar)
