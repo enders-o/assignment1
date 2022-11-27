@@ -2,6 +2,19 @@ html {
     height: 100%;
 }
 
+.darkThemeBody {
+    background-color: #404258;
+    color: #F3EFE0;
+}
+
+.darkThemeAside {
+    background-color: #6B728E;
+}
+
+a{
+    color: black;
+}
+
 body {
     background-color: #EBD8C1;
     display: grid;
@@ -39,7 +52,6 @@ h1 {
 }
 
 #links a{
-    color: black;
     text-decoration: none;
     padding: 10px;
 }
