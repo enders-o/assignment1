@@ -3,12 +3,12 @@ html {
 }
 
 .darkThemeBody {
-    background-color: #404258;
+    background-color: #333547;
     color: #F3EFE0;
 }
 
 .darkThemeAside {
-    background-color: #6B728E;
+    background-color: #404258;
 }
 
 a{
@@ -105,21 +105,38 @@ footer a img{
     height: 50px;
 }
 
-#new-note {
+.new-note {
     background-color: #5394A0;
 }
 
-#dark-theme {
+.dark-theme {
     background-color: #6F6A87;
 }
 
-#save {
+.save {
     background-color: #4B7171;
 }
 
-#cancel {
+.cancel {
     background-color: #D9827C;
 }
+
+.new-note-dark {
+    background-color: #37646C;
+}
+
+.dark-theme-dark {
+    background-color: #4B485B;
+}
+
+.save-dark {
+    background-color: #314949;
+}
+
+.cancel-dark {
+    background-color: #AE3B32;
+}
+
 
 @media screen and (max-width: 600px){
     aside {

@@ -1,7 +1,7 @@
-const themeButton = document.querySelector('#dark-theme');
-const cancelButton = document.querySelector("#cancel");
-const newNoteButton = document.querySelector("#new-note");
-const saveButton = document.querySelector('#save');
+const themeButton = document.querySelector('.dark-theme');
+const cancelButton = document.querySelector(".cancel");
+const newNoteButton = document.querySelector(".new-note");
+const saveButton = document.querySelector('.save');
 const textarea = document.querySelector('textarea');
 const notesList = document.querySelector(".notes-list");
 // console.log(themeButton);
@@ -17,6 +17,10 @@ const darkTheme = () => {
     document.querySelector('aside').classList.toggle('darkThemeAside');
     document.querySelector('#about').classList.toggle('darkThemeBody');
     document.querySelector('#docs').classList.toggle('darkThemeBody');
+    newNoteButton.classList.toggle('new-note-dark')
+    themeButton.classList.toggle('dark-theme-dark')
+    saveButton.classList.toggle('save-dark')
+    cancelButton.classList.toggle('cancel-dark')
 
     if (themeButton.textContent === 'Dark Theme') {
         themeButton.textContent = "Light Theme";
