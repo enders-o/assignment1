@@ -49,7 +49,17 @@ const newNote = () => {
 
 const save = () => {
     user_text = textarea.value;
-    user_title = prompt("Enter a title: ");
+    user_title = null;
+    do {
+        user_title = prompt("Enter a title: ");
+        notesArray.forEach((el) => {
+            if(user_title === el.title){
+                alert("Title already used.");
+                user_title = null;
+            }
+        });
+        
+    } while(user_title === null)
     // console.log(user_text);
     notesArray.push({title: user_title, body:user_text});
     // console.log(notesArray);
