@@ -83,4 +83,4 @@ themeButton.addEventListener("click", darkTheme);
 cancelButton.addEventListener("click", cancel);
 newNoteButton.addEventListener("click", newNote);
 saveButton.addEventListener("click", save);
-notesList.addEventListener("click", sidebar)
+notesList.addEventListener("click", sidebar);
