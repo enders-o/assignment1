@@ -19,12 +19,19 @@ body {
     background-color: #EBD8C1;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 5% 60% 25%;
+    grid-template-rows: 10% 5% 70% 15%;
     height: 100%;
     width: 100%;
     margin: 0;
     font-family: 'Sono', sans-serif;
     margin-right: 10px;
+}
+
+
+main {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
 }
 
 aside {
@@ -59,7 +66,6 @@ h1 {
 #top-buttons {
     display: flex;
     justify-content: space-between;
-    align-self: center;
     padding: 10px;
 }
 
@@ -78,16 +84,16 @@ button {
 
 #note textarea{
     width: 100%;
-    height: 90%;
+    height: 95%;
     border: lightblue 2px solid;
     padding: 10px;
 }
 
 #bottom-buttons {
-    padding: 10px;
     display: flex;
     justify-content: right;
-    align-self: center;
+    position: relative;
+    top: 0;
 }
 
 #bottom-buttons button {
@@ -96,8 +102,7 @@ button {
 
 footer {
     text-align: center;
-    position: relative;
-    top: 60px;
+    grid-row: 4/5;
 }
 
 footer a img{
