@@ -142,6 +142,10 @@ footer a img{
     background-color: #AE3B32;
 }
 
+.display-none {
+    display: none;
+}
+
 
 @media screen and (max-width: 600px){
     body {

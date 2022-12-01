@@ -31,20 +31,20 @@ const darkTheme = () => {
 }
 
 const cancel = () => {
-    textarea.style.display = 'none';
-    document.querySelector('.save').style.display = 'none';
-    document.querySelector('.cancel').style.display = 'none';
+    // textarea.style.display = 'none';
+    // document.querySelector('.save').style.display = 'none';
+    // document.querySelector('.cancel').style.display = 'none';
+
+    textarea.classList.add('display-none');
+    document.querySelector('.save').classList.add('display-none');
+    document.querySelector('.cancel').classList.add('display-none');
 }
 
 const newNote = () => {
-    if ( textarea.style.display === 'none') {
-        textarea.style.display = 'block';
-        document.querySelector('.save').style.display = 'inline-block';
-        document.querySelector('.cancel').style.display = 'inline-block';
-        textarea.value ="";
-    } else {
-        textarea.value ="";
-    }
+    textarea.classList.remove('display-none');
+    document.querySelector('.save').classList.remove('display-none');
+    document.querySelector('.cancel').classList.remove('display-none');
+    textarea.value ="";
 }
 
 const save = () => {
