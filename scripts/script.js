@@ -32,15 +32,15 @@ const darkTheme = () => {
 
 const cancel = () => {
     textarea.style.display = 'none';
-    document.querySelector('#save').style.display = 'none';
-    document.querySelector('#cancel').style.display = 'none';
+    document.querySelector('.save').style.display = 'none';
+    document.querySelector('.cancel').style.display = 'none';
 }
 
 const newNote = () => {
     if ( textarea.style.display === 'none') {
         textarea.style.display = 'block';
-        document.querySelector('#save').style.display = 'inline-block';
-        document.querySelector('#cancel').style.display = 'inline-block';
+        document.querySelector('.save').style.display = 'inline-block';
+        document.querySelector('.cancel').style.display = 'inline-block';
         textarea.value ="";
     } else {
         textarea.value ="";
