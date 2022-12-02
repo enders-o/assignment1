@@ -2,16 +2,36 @@ html {
     height: 100%;
 }
 
+.darkThemeBody {
+    background-color: #333547;
+    color: #F3EFE0;
+}
+
+.darkThemeAside {
+    background-color: #404258;
+}
+
+a{
+    color: black;
+}
+
 body {
     background-color: #EBD8C1;
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 10% 5% 10% 40% 10% 25%;
+    grid-template-rows: 10% 5% 70% 15%;
     height: 100%;
     width: 100%;
     margin: 0;
     font-family: 'Sono', sans-serif;
     margin-right: 10px;
+}
+
+
+main {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
 }
 
 aside {
@@ -39,7 +59,6 @@ h1 {
 }
 
 #links a{
-    color: black;
     text-decoration: none;
     padding: 10px;
 }
@@ -47,7 +66,6 @@ h1 {
 #top-buttons {
     display: flex;
     justify-content: space-between;
-    align-self: center;
     padding: 10px;
 }
 
@@ -66,16 +84,16 @@ button {
 
 #note textarea{
     width: 100%;
-    height: 90%;
+    height: 95%;
     border: lightblue 2px solid;
     padding: 10px;
 }
 
 #bottom-buttons {
-    padding: 10px;
     display: flex;
     justify-content: right;
-    align-self: center;
+    position: relative;
+    top: 0;
 }
 
 #bottom-buttons button {
@@ -84,8 +102,7 @@ button {
 
 footer {
     text-align: center;
-    position: relative;
-    top: 60px;
+    grid-row: 4/5;
 }
 
 footer a img{
@@ -93,27 +110,34 @@ footer a img{
     height: 50px;
 }
 
-#new-note {
+.new-note {
     background-color: #5394A0;
 }
 
-#dark-theme {
+.dark-theme {
     background-color: #6F6A87;
 }
 
-#save {
+.save {
     background-color: #4B7171;
 }
 
-#cancel {
+.cancel {
     background-color: #D9827C;
 }
 
+.display-none {
+    display: none;
+}
+
+
 @media screen and (max-width: 600px){
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     aside {
         background-color: #EBD8C1;
-        grid-row: 6/7;
-        grid-column: 1/3;
         display: flex;
         width: 100%;
         margin-left: 10px;
@@ -121,15 +145,11 @@ footer a img{
         border-bottom: 1px solid black;
     }
 
-    h1 {
-        grid-column: 1/3;
+    #note {
+        height: 50vh;
     }
 
-    nav, section {
-        grid-column: 1/3;
-    }
-    footer {
-        grid-column: 1/3;
-        grid-row: 7/8;
+    #bottom-buttons {
+        margin-top: 10px;
     }
 }

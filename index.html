@@ -8,32 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sono&display=swap" rel="stylesheet">
+    <script defer src="scripts/script.js"></script>
     <title>Assignment 1</title>
 </head>
 <body>
-    <h1>Take Better Notes</h1>
+    <header>
+        <h1>Take Better Notes</h1>
+    </header>
     <nav id="links">
-        <a href="">About</a>
-        <a href="">Docs</a>
+        <a id="about" href="">About</a>
+        <a id="docs" href="">Docs</a>
     </nav>
     <aside>
         <h2>My Notes</h2>
-        <ul>
+        <ul class="notes-list">
             <li>note one</li>
-            <li>note two</li>
         </ul>
     </aside>
-    <section id="top-buttons">
-        <button id="new-note">New Note</button>
-        <button id="dark-theme">Dark Theme</button>
-    </section>
-    <section id="note">
-        <textarea placeholder="This is a placeholder..."></textarea>
-    </section>
-    <section id="bottom-buttons">
-        <button id="save">Save</button>
-        <button id="cancel">Cancel</button>
-    </section>
+    <main>
+        <section id="top-buttons">
+            <button class="new-note">New Note</button>
+            <button class="dark-theme">Dark Theme</button>
+        </section>
+        <section id="note">
+            <textarea placeholder="This is a placeholder..."></textarea>
+        </section>
+        <section id="bottom-buttons">
+            <button class="save">Save</button>
+            <button class="cancel">Cancel</button>
+        </section>
+    </main>
     <footer>
         <h3>Keep in Touch</h3>
         <a href=""><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" alt="Linked in logo"></a>
