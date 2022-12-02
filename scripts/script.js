@@ -17,10 +17,6 @@ const darkTheme = () => {
     document.querySelector('aside').classList.toggle('darkThemeAside');
     document.querySelector('#about').classList.toggle('darkThemeBody');
     document.querySelector('#docs').classList.toggle('darkThemeBody');
-    newNoteButton.classList.toggle('new-note-dark')
-    themeButton.classList.toggle('dark-theme-dark')
-    saveButton.classList.toggle('save-dark')
-    cancelButton.classList.toggle('cancel-dark')
 
     if (themeButton.textContent === 'Dark Theme') {
         themeButton.textContent = "Light Theme";
